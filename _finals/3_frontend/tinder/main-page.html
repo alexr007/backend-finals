@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinder: Main Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main-page.css">
+</head>
+<body>
+
+<header class="main-header">
+    <a href="./main-page.html" class="main-header-logo"><img src="./img/iba-tech-logo-white.svg" alt="IBA Tech Academy"></a>
+    <div class="main-header-wrapper">
+        <label class="main-header-search-wrapper">
+            <input type="search" class="main-header-search" placeholder="Add new profile">
+            <img src="./img/search-icon.svg" alt="Search Icon">
+        </label>
+        <div class="main-header-profile-wrapper">
+            <div class="main-header-profile-credentials">
+                <span class="main-header-profile-welcome">Welcome,</span>
+                <span class="main-header-username">Sample User</span>
+            </div>
+            <img class="main-header-user-icon" src="./img/user-icon-with-background.svg" alt="User Icon">
+            <div class="hidden-accordion-wrapper">
+                <ul class="hidden-accordion">
+                    <li class="hidden-accordion-item"><a href="./my-profile.html" class="hidden-accordion-item-link"><img class="hidden-accordion-item-image" src="./img/user-icon-gray.svg" alt="User Icon">Profile</a></li>
+                    <li class="hidden-accordion-item"><a href="./favourites.html" class="hidden-accordion-item-link"><img class="hidden-accordion-item-image" src="./img/favourite-icon.svg" alt="Favourite Icon">Favourites</a></li>
+                    <li class="hidden-accordion-item"><a href="#" class="hidden-accordion-item-link"><img class="hidden-accordion-item-image" src="./img/message-icon.svg" alt="Message Icon">Chat</a></li>
+                    <li class="hidden-accordion-item"><a href="./index.html" class="hidden-accordion-item-link"><img class="hidden-accordion-item-image" src="./img/log-out-icon.svg" alt="Log Out Icon">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="main-section">
+    <div class="main-section-description-wrapper">
+        <h1 class="main-section-description-title">Lorem</h1>
+        <p class="main-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="./favourites.html" class="main-section-description-link">Go to favourites<img src="img/arrow-icon.svg" class="main-section-description-link-arrow" alt="Arrow Icon"></a>
+    </div>
+    <div class="main-section-cards-wrapper">
+        <a href="./user-profile.html" style="text-decoration: none;">
+            <div class="main-section-card">
+                <span class="main-section-card-name">Sample Name</span>
+                <div class="main-section-card-picture-wrapper">
+                    <img src="./img/sample-user-avatar.png" alt="Sample Avatar" class="main-section-card-picture">
+                    <div class="card-like-dislike-buttons">
+                        <a href="#" class="like-button"><div class="like-icon"><svg width="32" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.6055 17.8477C30.7461 18.3164 30.8164 18.8008 30.8164 19.293C30.8164 20.3984 30.4531 21.4609 29.7969 22.3281C29.9375 22.7969 30.0078 23.2812 30.0078 23.7734C30.0078 24.8789 29.6445 25.9414 28.9883 26.8086C29.1289 27.2773 29.1992 27.7617 29.1992 28.2539C29.1992 30.2695 28 32.0859 26.1406 32.8789C25.8138 33.0198 25.4614 33.0916 25.1055 33.0898H6.66406V16.3711H6.67578L10.0273 4.23047C10.5664 2.27344 12.3633 0.90625 14.3945 0.90625C15.5547 0.90625 16.6367 1.36719 17.4375 2.21094C18.2383 3.05078 18.6484 4.15234 18.5898 5.3125L18.3555 10.1133H27.7266C28.1992 10.1133 28.6602 10.2383 29.0664 10.4766C30.6445 11.3945 31.625 13.0586 31.625 14.8125C31.625 15.918 31.2617 16.9805 30.6055 17.8477ZM0.375 31.8438V17.625C0.375 16.9336 0.933594 16.375 1.625 16.375H4.16406V33.0938H1.625C0.933594 33.0938 0.375 32.5352 0.375 31.8438Z" fill="#BDBDBD"/>
+                        </svg>
+                        </div> Like</a>
+                        <a href="#" class="dislike-button"><div class="dislike-icon"><svg width="32" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.6055 16.1523C30.7461 15.6836 30.8164 15.1992 30.8164 14.707C30.8164 13.6016 30.4531 12.5391 29.7969 11.6719C29.9375 11.2031 30.0078 10.7188 30.0078 10.2266C30.0078 9.12109 29.6445 8.05859 28.9883 7.19141C29.1289 6.72266 29.1992 6.23828 29.1992 5.74609C29.1992 3.73047 28 1.91406 26.1406 1.12109C25.8138 0.98019 25.4614 0.908374 25.1055 0.910156H6.66406V17.6289H6.67578L10.0273 29.7695C10.5664 31.7266 12.3633 33.0938 14.3945 33.0938C15.5547 33.0938 16.6367 32.6328 17.4375 31.7891C18.2383 30.9492 18.6484 29.8477 18.5898 28.6875L18.3555 23.8867H27.7266C28.1992 23.8867 28.6602 23.7617 29.0664 23.5234C30.6445 22.6055 31.625 20.9414 31.625 19.1875C31.625 18.082 31.2617 17.0195 30.6055 16.1523ZM0.375 2.15625V16.375C0.375 17.0664 0.933594 17.625 1.625 17.625H4.16406V0.90625H1.625C0.933594 0.90625 0.375 1.46484 0.375 2.15625Z" fill="#BDBDBD"/>
+                        </svg>
+                        </div> Dislike</a>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="main-section-card">
+            <span class="main-section-card-name">Sample Name</span>
+            <div class="main-section-card-picture-wrapper bg-none">
+                <img src="./img/sample-user-avatar.png" alt="Sample Avatar" class="main-section-card-picture">
+                <div class="card-like-dislike-buttons unactive">
+                    <a href="#" class="like-button"><div class="like-icon"><svg width="32" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30.6055 17.8477C30.7461 18.3164 30.8164 18.8008 30.8164 19.293C30.8164 20.3984 30.4531 21.4609 29.7969 22.3281C29.9375 22.7969 30.0078 23.2812 30.0078 23.7734C30.0078 24.8789 29.6445 25.9414 28.9883 26.8086C29.1289 27.2773 29.1992 27.7617 29.1992 28.2539C29.1992 30.2695 28 32.0859 26.1406 32.8789C25.8138 33.0198 25.4614 33.0916 25.1055 33.0898H6.66406V16.3711H6.67578L10.0273 4.23047C10.5664 2.27344 12.3633 0.90625 14.3945 0.90625C15.5547 0.90625 16.6367 1.36719 17.4375 2.21094C18.2383 3.05078 18.6484 4.15234 18.5898 5.3125L18.3555 10.1133H27.7266C28.1992 10.1133 28.6602 10.2383 29.0664 10.4766C30.6445 11.3945 31.625 13.0586 31.625 14.8125C31.625 15.918 31.2617 16.9805 30.6055 17.8477ZM0.375 31.8438V17.625C0.375 16.9336 0.933594 16.375 1.625 16.375H4.16406V33.0938H1.625C0.933594 33.0938 0.375 32.5352 0.375 31.8438Z" fill="#BDBDBD"/>
+                    </svg>
+                    </div> Like</a>
+                    <a href="#" class="dislike-button"><div class="dislike-icon"><svg width="32" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30.6055 16.1523C30.7461 15.6836 30.8164 15.1992 30.8164 14.707C30.8164 13.6016 30.4531 12.5391 29.7969 11.6719C29.9375 11.2031 30.0078 10.7188 30.0078 10.2266C30.0078 9.12109 29.6445 8.05859 28.9883 7.19141C29.1289 6.72266 29.1992 6.23828 29.1992 5.74609C29.1992 3.73047 28 1.91406 26.1406 1.12109C25.8138 0.98019 25.4614 0.908374 25.1055 0.910156H6.66406V17.6289H6.67578L10.0273 29.7695C10.5664 31.7266 12.3633 33.0938 14.3945 33.0938C15.5547 33.0938 16.6367 32.6328 17.4375 31.7891C18.2383 30.9492 18.6484 29.8477 18.5898 28.6875L18.3555 23.8867H27.7266C28.1992 23.8867 28.6602 23.7617 29.0664 23.5234C30.6445 22.6055 31.625 20.9414 31.625 19.1875C31.625 18.082 31.2617 17.0195 30.6055 16.1523ZM0.375 2.15625V16.375C0.375 17.0664 0.933594 17.625 1.625 17.625H4.16406V0.90625H1.625C0.933594 0.90625 0.375 1.46484 0.375 2.15625Z" fill="#BDBDBD"/>
+                    </svg>
+                    </div> Dislike</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-section-card">
+            <span class="main-section-card-name">Sample Name</span>
+            <div class="main-section-card-picture-wrapper bg-none">
+                <img src="./img/sample-user-avatar.png" alt="Sample Avatar" class="main-section-card-picture">
+                <div class="card-like-dislike-buttons unactive">
+                    <a href="#" class="like-button"><div class="like-icon"><svg width="32" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30.6055 17.8477C30.7461 18.3164 30.8164 18.8008 30.8164 19.293C30.8164 20.3984 30.4531 21.4609 29.7969 22.3281C29.9375 22.7969 30.0078 23.2812 30.0078 23.7734C30.0078 24.8789 29.6445 25.9414 28.9883 26.8086C29.1289 27.2773 29.1992 27.7617 29.1992 28.2539C29.1992 30.2695 28 32.0859 26.1406 32.8789C25.8138 33.0198 25.4614 33.0916 25.1055 33.0898H6.66406V16.3711H6.67578L10.0273 4.23047C10.5664 2.27344 12.3633 0.90625 14.3945 0.90625C15.5547 0.90625 16.6367 1.36719 17.4375 2.21094C18.2383 3.05078 18.6484 4.15234 18.5898 5.3125L18.3555 10.1133H27.7266C28.1992 10.1133 28.6602 10.2383 29.0664 10.4766C30.6445 11.3945 31.625 13.0586 31.625 14.8125C31.625 15.918 31.2617 16.9805 30.6055 17.8477ZM0.375 31.8438V17.625C0.375 16.9336 0.933594 16.375 1.625 16.375H4.16406V33.0938H1.625C0.933594 33.0938 0.375 32.5352 0.375 31.8438Z" fill="#BDBDBD"/>
+                    </svg>
+                    </div> Like</a>
+                    <a href="#" class="dislike-button"><div class="dislike-icon"><svg width="32" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30.6055 16.1523C30.7461 15.6836 30.8164 15.1992 30.8164 14.707C30.8164 13.6016 30.4531 12.5391 29.7969 11.6719C29.9375 11.2031 30.0078 10.7188 30.0078 10.2266C30.0078 9.12109 29.6445 8.05859 28.9883 7.19141C29.1289 6.72266 29.1992 6.23828 29.1992 5.74609C29.1992 3.73047 28 1.91406 26.1406 1.12109C25.8138 0.98019 25.4614 0.908374 25.1055 0.910156H6.66406V17.6289H6.67578L10.0273 29.7695C10.5664 31.7266 12.3633 33.0938 14.3945 33.0938C15.5547 33.0938 16.6367 32.6328 17.4375 31.7891C18.2383 30.9492 18.6484 29.8477 18.5898 28.6875L18.3555 23.8867H27.7266C28.1992 23.8867 28.6602 23.7617 29.0664 23.5234C30.6445 22.6055 31.625 20.9414 31.625 19.1875C31.625 18.082 31.2617 17.0195 30.6055 16.1523ZM0.375 2.15625V16.375C0.375 17.0664 0.933594 17.625 1.625 17.625H4.16406V0.90625H1.625C0.933594 0.90625 0.375 1.46484 0.375 2.15625Z" fill="#BDBDBD"/>
+                    </svg>
+                    </div> Dislike</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

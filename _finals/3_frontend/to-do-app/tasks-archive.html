@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Tasks archive</title>
+</head>
+
+<body>
+<!--The modal window-->
+    <div class="modal">
+    <span class="modal-close"></span>
+    <h3 class="modal-title">You definitely want to delete?</h3>
+    <p class="modal-subtitle">This action cannot be undone!</p>
+    <div class="modal-action-btns-container">
+        <a href="" class="modal-btn modal-btn--light">Go Back</a>
+        <a href="" class="modal-btn modal-btn--dark">Delete</a>
+    </div>
+</div>
+<div class="overlay"></div>
+<!--The modal window's end-->
+
+	<header class="main-header">
+		<a href="tasks-dashboard.html" class="main-header-logo"><img src="./img/iba-tech-logo-white.svg" alt="IBA Tech Academy"></a>
+		<div class="main-header-wrapper">
+			<label class="main-header-search-wrapper">
+				<input type="search" class="main-header-search" placeholder="Search">
+				<img src="./img/search-icon.svg" alt="Search Icon">
+			</label>
+			<div class="main-header-profile-wrapper">
+				<div class="main-header-profile-credentials">
+					<span class="main-header-profile-welcome">Welcome,</span>
+					<span class="main-header-username">Sample User</span>
+				</div>
+				<img class="main-header-user-icon" src="./img/user-icon-with-background.svg" alt="User Icon">
+				<div class="hidden-accordion-wrapper">
+					<ul class="hidden-accordion">
+						<li class="hidden-accordion-item"><a href="./tasks-archive.html" class="hidden-accordion-item-link"><img class="hidden-accordion-item-image" src="./img/archive-icon.svg" alt="User Icon">Archive</a></li>
+						<li class="hidden-accordion-item"><a href="./tasks-dashboard.html" class="hidden-accordion-item-link"><img class="hidden-accordion-item-image" src="./img/favourite-icon.svg" alt="Favourite Icon">My tasks</a></li>
+						<li class="hidden-accordion-item"><a href="./login.html" class="hidden-accordion-item-link"><img class="hidden-accordion-item-image" src="./img/log-out-icon.svg" alt="Log Out Icon">Log Out</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+    <section class="tasks">
+    <div class="container">
+        <div class="tasks-caption">
+            <h2 class="tasks-caption-title">Archive</h2>
+            <div class="tasks-caption-actions">
+                <form class="tasks-filter" action="" id="sort-tasks">
+					<label for="task-type" class="tasks-filter-label">Sort by</label>
+					<select class="tasks-filter-list" name="task-type" id="">
+						<option class="tasks-filter-item" value="deleted">Deleted</option>
+						<option class="tasks-filter-item" value="overdue">Overdue</option>
+						<option class="tasks-filter-item" value="today">Today</option>
+						<option class="tasks-filter-item" value="done">Done</option>
+					</select>
+                </form>
+                <a href="add-task.html" class="btn btn-dark btn-add-task">Add task</a>
+            </div>
+        </div>
+
+        <div class="tasks-list">
+			<div class="task">
+				<h4 class="task-title">Task 001</h4>
+				<p class="task-start-time">21.06.2020</p>
+				<p class="task-deadline">Deadline to: <span class="task-deadline-date">30.06.2020</span></p>
+				<p class="task-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+				<div class="task-icons">
+					<img class="task-icons-item" src="./img/bell.png" alt="bell">
+					<img class="task-icons-item" src="./img/trash-bin.png" alt="bell">
+				</div>
+				<a href="#" class="task-btn">Complete</a>
+			</div>
+			<div class="task">
+				<h4 class="task-title">Task 002</h4>
+				<p class="task-start-time">21.06.2020</p>
+				<p class="task-deadline">Deadline to: <span class="task-deadline-date">30.06.2020</span></p>
+				<p class="task-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+				<div class="task-icons">
+					<img class="task-icons-item" src="./img/bell.png" alt="bell">
+					<img class="task-icons-item" src="./img/trash-bin.png" alt="bell">
+				</div>
+				<a href="#" class="task-btn">Complete</a>
+			</div>
+			<div class="task">
+				<h4 class="task-title">Task 003</h4>
+				<p class="task-start-time">21.06.2020</p>
+				<p class="task-deadline">Deadline to: <span class="task-deadline-date">30.06.2020</span></p>
+				<p class="task-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+				<div class="task-icons">
+					<img class="task-icons-item" src="./img/bell.png" alt="bell">
+					<img class="task-icons-item" src="./img/trash-bin.png" alt="bell">
+				</div>
+				<a href="#" class="task-btn">Complete</a>
+			</div>
+			<div class="task">
+				<h4 class="task-title">Task 004</h4>
+				<p class="task-start-time">21.06.2020</p>
+				<p class="task-deadline">Deadline to: <span class="task-deadline-date">30.06.2020</span></p>
+				<p class="task-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+				<div class="task-icons">
+					<img class="task-icons-item" src="./img/bell.png" alt="bell">
+					<img class="task-icons-item" src="./img/trash-bin.png" alt="bell">
+				</div>
+				<a href="#" class="task-btn">Complete</a>
+       		</div>
+			<div class="task">
+				<h4 class="task-title">Task 005</h4>
+				<p class="task-start-time">21.06.2020</p>
+				<p class="task-deadline">Deadline to: <span class="task-deadline-date">30.06.2020</span></p>
+				<p class="task-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+				<div class="task-icons">
+					<img class="task-icons-item" src="./img/bell.png" alt="bell">
+					<img class="task-icons-item" src="./img/trash-bin.png" alt="bell">
+				</div>
+				<a href="#" class="task-btn">Complete</a>
+       		</div>
+        </div>
+
+   		<div class="task-card-section">
+   			<h3 class="task-card-title">Task 002</h3>
+   			<div class="task-card">
+   				<div class="task-card-left-col">
+   					<div class="task-card-img _1"></div>
+   					<div class="task-card-form">
+						<div class="task-card-form-row">
+							<label for="task-card-date" class="task-card-label">Deadline to:</label>
+							<input name="task-card-date" type="date" value="2020-06-30" class="task-card-input">
+						</div>
+						<div class="task-card-form-row">
+							<label for="name-task" class="task-card-label">Name Task</label>
+							<input name="name-task" type="text" placeholder="Task 002" class="task-card-input">
+						</div>
+   					</div>
+   					<div class="task-card-actions">
+   						<a href="#" class="task-card-actions-item">
+   							<img src="./img/arrow.png" alt="" class="task-card-actions-icon">
+   							Share
+   						</a>
+   						<a href="#" class="task-card-actions-item">
+   							<img src="./img/bell.png" alt="" class="task-card-actions-icon">
+   							Add to important
+   						</a>
+   						<a href="#" class="task-card-actions-item">
+   							<img src="./img/trash-bin.png" alt="" class="task-card-actions-icon">
+   							Delete
+   						</a>
+   					</div>
+   				</div>
+   				<div class="task-card-right-col">
+   					<h4 class="task-card-header">Task Description</h4>
+   					<p class="task-card-text">
+   						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+  					<a href="#" class="btn btn-dark btn-task-card">Save</a>
+   				</div>
+   			</div>
+   		</div>
+   
+    </div>
+</section>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

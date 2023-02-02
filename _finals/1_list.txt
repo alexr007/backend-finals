@@ -1,0 +1,8 @@
+BACKEND GROUP FINAL PROJECTS:
+-----------------------------
+
+- TODO list
+- URL shortener
+- News Feed (News Scrapper)
+- Currency Exchange
+- Tinder Social Network
